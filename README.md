@@ -1,2 +1,2 @@
 # record_tool
-this is a record tool
+🚧 Fix,➕ Feat,🔨 Refactor,📝 Docs,✨ Style,🍱 Perf,🔧 Test,⚡️ Chore,🐛 Bug
