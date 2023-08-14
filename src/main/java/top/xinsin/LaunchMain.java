@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import top.xinsin.service.RecordService;
 
 import java.util.Objects;
 
@@ -14,6 +15,7 @@ import java.util.Objects;
  * @version 1.0
  */
 public class LaunchMain extends Application {
+    private RecordService recordService = new RecordService();
     public static void main(String[] args) {
         launch(args);
     }
@@ -23,5 +25,6 @@ public class LaunchMain extends Application {
         primaryStage.setTitle("record_tool");
         primaryStage.setScene(new Scene(root,800,600));
         primaryStage.show();
+        recordService.findAll().forEach(System.out::println);
     }
 }
