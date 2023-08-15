@@ -10,8 +10,10 @@ module record.tool {
     requires static lombok;
     requires org.xerial.sqlitejdbc;
     requires org.mybatis;
+    requires com.alibaba.fastjson2;
 
 
     opens top.xinsin to javafx.fxml;
     exports top.xinsin;
+    exports top.xinsin.pojo;
 }
